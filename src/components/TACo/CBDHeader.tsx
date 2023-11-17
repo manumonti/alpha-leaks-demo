@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEthers } from "@usedapp/core";
-import StrategyBuilder from "./StrategyBuilder";
+import ConditionsBuilder from "./ConditionsBuilder";
 import Encrypt from "./Encrypt";
 import Decrypt from "./Decrypt";
 
@@ -28,25 +28,25 @@ function CBDHeader({ setDecryptedMessages }: any) {
     <div className="cbd-header">
       <div className="row">
         <div className="column">
-          <div>
+          {/* <div>
             <button className="cbd-button" onClick={activateBrowserWallet}>
               Step 1. Connect Wallet
             </button>
           </div>
           <div>
-            <StrategyBuilder
+            <ConditionsBuilder
               setDepStrategy={setDepStrategy}
               setDepStrategyStatus={setDepStrategyStatus}
             />
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <Encrypt
               depStrategy={depStrategy}
               setConditionSets={setConditionSets}
               setEncryptedMessages={setEncryptedMessages}
             />
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <Decrypt
               depStrategy={depStrategy}
               conditionSets={conditionSets}
@@ -54,7 +54,7 @@ function CBDHeader({ setDecryptedMessages }: any) {
               setDecryptedMessages={setDecryptedMessages}
               setDecMessagesStatus={setDecMessagesStatus}
             />
-          </div>
+          </div> */}
         </div>
         <div className="column">
           <div style={{ textAlign: "right" }}>

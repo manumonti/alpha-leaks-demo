@@ -3,7 +3,7 @@ import { Mumbai, useEthers } from "@usedapp/core";
 import { providers } from "ethers";
 import { Cohort, Strategy } from "@nucypher/nucypher-ts";
 
-function StrategyBuilder({ setDepStrategy, setDepStrategyStatus }: any) {
+function ConditionsBuilder({ setDepStrategy, setDepStrategyStatus }: any) {
   const { switchNetwork } = useEthers();
 
   const strategyBuild = async () => {
@@ -37,4 +37,4 @@ function StrategyBuilder({ setDepStrategy, setDepStrategyStatus }: any) {
   );
 }
 
-export default StrategyBuilder;
+export default ConditionsBuilder;
